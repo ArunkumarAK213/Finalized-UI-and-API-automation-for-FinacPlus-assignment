@@ -22,5 +22,5 @@ test('Book Store Flow', async ({ page }) => {
 
   saveBook(details);
 
-  await page.click('#submit'); // logout
+  await page.click('#submit'); 
 });
