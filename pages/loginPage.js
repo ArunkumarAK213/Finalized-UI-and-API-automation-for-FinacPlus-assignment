@@ -4,7 +4,7 @@ class LoginPage {
   }
 
   async goToLogin() {
-    await this.page.click('text=Login'); // safer than #login
+    await this.page.click('text=Login');
   }
 
   async login(username, password) {
@@ -13,7 +13,7 @@ class LoginPage {
     await this.page.fill('#userName', username);
     await this.page.fill('#password', password);
 
-    await this.page.locator('#login').last().click(); // click correct login button
+    await this.page.locator('#login').last().click(); 
   }
 
   async getUsername() {
